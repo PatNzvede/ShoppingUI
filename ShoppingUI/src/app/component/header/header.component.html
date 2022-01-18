@@ -1,0 +1,24 @@
+<div class="navbar navbar-dark bg-primary shadow-sm">
+    <div class="navbar-brand align-item-center d-flex">            
+        <i style="font-size:40px; color:white;" class="fas fa-shipping-fast">
+         &nbsp;   
+        </i>
+        <strong style="font-size:30px;">Fruit&Vege Online</strong>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="search products">
+    </div>
+    <span class="fas fa-search search-icon"></span>
+    </div>
+    <!--a *ngIf="|token" routerLink ="/login" routerLinkActive ="active">Login</a-->
+    <!--a routerLink ="/login" routerLinkActive ="active">Login</a-->  
+    <!--span *ngIf="token"> 
+        <a class="txt">Welcome ! {{claims.name}}</a>
+        <a class="link" (click) ="logout()">Logout</a>
+    </span-->
+    <button class="btn btn-primary">Login</button>
+    <button class="btn btn-primary">Logout</button>
+    <button routerLink="order" class="btn-primary">
+        <i class="fas fa-cart-plus fa-2x"></i>
+        <div style="font-size:10px;" class="badge bg-danger">{{totalItem}}</div>
+    </button>
+</div>

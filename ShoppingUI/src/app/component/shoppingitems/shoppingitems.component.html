@@ -1,0 +1,16 @@
+<div class="container">
+    <div class ="row mb-3 mt-2">
+        <button routerLink="/order" class="btn btn-success">What's in my cart</button>
+    </div>
+    <div class="row">
+        <ng-container *ngFor="let item of productList">
+        <div class="card col-md-3">
+        <img src="assets/{{item.picture}}" alt="">
+        <p><strong>Price: R{{item.price}} </strong></p>
+        <p><strong>Quantity: {{item.quantity}} </strong></p>
+        <p><strong>Product Name: {{item.productName}} </strong></p>
+        <button class="btn btn-primary" (click) =addtocart(item)>Add to cart</button>
+        </div> 
+        </ng-container>  
+    </div>
+</div>
